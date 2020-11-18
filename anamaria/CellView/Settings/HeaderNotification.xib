@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderNotification" customModule="anamaria" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Se9-xS-Ywd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-DP-45X">
+                            <rect key="frame" x="20" y="25" width="374" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="25"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vVo-DP-45X" firstAttribute="leading" secondItem="Se9-xS-Ywd" secondAttribute="leading" constant="20" id="NMa-88-TrP"/>
+                        <constraint firstItem="vVo-DP-45X" firstAttribute="centerX" secondItem="Se9-xS-Ywd" secondAttribute="centerX" id="TPl-lb-cdu"/>
+                        <constraint firstAttribute="height" constant="50" id="Tad-zJ-zgn"/>
+                        <constraint firstItem="vVo-DP-45X" firstAttribute="centerY" secondItem="Se9-xS-Ywd" secondAttribute="centerY" id="k9Q-Ry-isB"/>
+                        <constraint firstAttribute="trailing" secondItem="vVo-DP-45X" secondAttribute="trailing" constant="20" id="vId-vl-xTz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Se9-xS-Ywd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N52-kJ-ryu"/>
+                <constraint firstItem="Se9-xS-Ywd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cxi-Gx-USH"/>
+                <constraint firstAttribute="trailing" secondItem="Se9-xS-Ywd" secondAttribute="trailing" id="mjd-by-8ze"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contenView" destination="Se9-xS-Ywd" id="MmO-9u-thx"/>
+                <outlet property="heigt" destination="Tad-zJ-zgn" id="wvb-Jc-Zwf"/>
+                <outlet property="lblTitle" destination="vVo-DP-45X" id="CvD-69-535"/>
+            </connections>
+        </view>
+    </objects>
+</document>
