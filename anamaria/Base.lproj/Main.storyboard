@@ -132,7 +132,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yy7-Jo-MTq">
+
                                                 <rect key="frame" x="269" y="465.66666666666669" width="115" height="29"/>
+
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="115" id="3ik-r3-vhW"/>
@@ -6489,7 +6491,9 @@
         <image name="switch_on" width="116.33333587646484" height="64.333335876464844"/>
         <image name="unno" width="564" height="181"/>
         <image name="unno2" width="344" height="110"/>
+
         <image name="unno_comp" width="313.66665649414062" height="169"/>
+
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -6500,7 +6504,9 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
+
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
         </systemColor>
     </resources>
 </document>
