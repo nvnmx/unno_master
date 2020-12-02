@@ -45,22 +45,22 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ST2-oz-blf">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unno2" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-9e-pye">
-                                                <rect key="frame" x="70" y="60" width="274" height="150"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unno_comp" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-9e-pye">
+                                                <rect key="frame" x="103" y="130" width="208" height="114"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="Odb-EJ-aH4"/>
+                                                    <constraint firstAttribute="height" constant="114" id="Odb-EJ-aH4"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KH-tV-PHL">
-                                                <rect key="frame" x="70" y="546" width="274" height="70"/>
+                                                <rect key="frame" x="30" y="546" width="354" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="jDo-oA-Gv1"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jDo-oA-Gv1"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Medium" family="Clarika Geometric" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Medium" family="Clarika Geometric" pointSize="20"/>
                                                 <state key="normal" title="INGRESAR">
-                                                    <color key="titleColor" red="0.41568627450980389" green="0.31764705882352939" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.43529411764705883" green="0.31372549019607843" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="enterLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sw7-U1-FGy"/>
@@ -71,6 +71,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="pM7-q5-oDa"/>
                                                 </constraints>
+                                                <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
@@ -79,6 +80,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="64b-91-LL2"/>
                                                 </constraints>
+                                                <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -97,8 +99,8 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESIGNED &amp; DEVELOPED BY NVN®" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-dq-nxm">
-                                                <rect key="frame" x="121.33333333333333" y="775" width="171.33333333333337" height="13"/>
-                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Medium" family="Clarika Geometric" pointSize="11"/>
+                                                <rect key="frame" x="105.66666666666667" y="772.33333333333337" width="202.66666666666663" height="15.666666666666629"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Medium" family="Clarika Geometric" pointSize="13"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -111,10 +113,10 @@
                                                 <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña olvidada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEd-q1-bY4">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA OLVIDADA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEd-q1-bY4">
                                                 <rect key="frame" x="30" y="329" width="354" height="20"/>
                                                 <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM2-oU-2og">
@@ -130,9 +132,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yy7-Jo-MTq">
-                                                <rect key="frame" x="282" y="465.66666666666669" width="102" height="29"/>
+
+                                                <rect key="frame" x="269" y="465.66666666666669" width="115" height="29"/>
+
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="115" id="3ik-r3-vhW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
                                                 <state key="normal" title="¿La he olvidado?">
                                                     <color key="titleColor" red="0.43529411764705883" green="0.31372549019607843" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -151,8 +158,8 @@
                                             <constraint firstAttribute="bottom" secondItem="ST2-oz-blf" secondAttribute="bottom" id="Al2-uW-NiA"/>
                                             <constraint firstItem="RgW-dq-nxm" firstAttribute="centerX" secondItem="b3W-JI-V03" secondAttribute="centerX" id="CMw-QK-J0q"/>
                                             <constraint firstItem="UHe-sA-RQf" firstAttribute="top" secondItem="lE5-09-3W1" secondAttribute="bottom" constant="10" id="COF-8T-vOI"/>
-                                            <constraint firstItem="6KH-tV-PHL" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="70" id="Cu3-7J-vKW"/>
-                                            <constraint firstAttribute="trailing" secondItem="6KH-tV-PHL" secondAttribute="trailing" constant="70" id="F0y-6r-Hs6"/>
+                                            <constraint firstItem="6KH-tV-PHL" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="30" id="Cu3-7J-vKW"/>
+                                            <constraint firstAttribute="trailing" secondItem="6KH-tV-PHL" secondAttribute="trailing" constant="30" id="F0y-6r-Hs6"/>
                                             <constraint firstAttribute="trailing" secondItem="yy7-Jo-MTq" secondAttribute="trailing" constant="30" id="FsN-aW-e7r"/>
                                             <constraint firstItem="fM2-oU-2og" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="15" id="GjU-UC-nKX"/>
                                             <constraint firstItem="UHe-sA-RQf" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="30" id="Gt0-ah-bZg"/>
@@ -164,7 +171,7 @@
                                             <constraint firstItem="6KH-tV-PHL" firstAttribute="top" secondItem="UHe-sA-RQf" secondAttribute="bottom" constant="40" id="OM1-dC-igb"/>
                                             <constraint firstItem="ST2-oz-blf" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" id="OUW-3D-5Pe"/>
                                             <constraint firstItem="lE5-09-3W1" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="30" id="U85-xK-nsC"/>
-                                            <constraint firstItem="e2y-9e-pye" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="70" id="Vy8-P4-dh0"/>
+                                            <constraint firstItem="e2y-9e-pye" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="103" id="Vy8-P4-dh0"/>
                                             <constraint firstItem="pz1-gV-42U" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="30" id="YMZ-Ux-3hA"/>
                                             <constraint firstItem="ST2-oz-blf" firstAttribute="top" secondItem="b3W-JI-V03" secondAttribute="top" id="aB6-7i-pyS"/>
                                             <constraint firstAttribute="trailing" secondItem="UHe-sA-RQf" secondAttribute="trailing" constant="30" id="cmG-Jw-2RY"/>
@@ -172,11 +179,11 @@
                                             <constraint firstItem="gmU-1t-Ug8" firstAttribute="centerY" secondItem="ST2-oz-blf" secondAttribute="centerY" constant="15" id="dbY-fs-GEO"/>
                                             <constraint firstItem="ms1-cp-2hV" firstAttribute="top" secondItem="LEd-q1-bY4" secondAttribute="bottom" constant="10" id="grn-tt-zpj"/>
                                             <constraint firstAttribute="bottom" secondItem="RgW-dq-nxm" secondAttribute="bottom" constant="20" id="lqa-l0-jsZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="e2y-9e-pye" secondAttribute="trailing" constant="70" id="o0l-F4-3c6"/>
+                                            <constraint firstAttribute="trailing" secondItem="e2y-9e-pye" secondAttribute="trailing" constant="103" id="o0l-F4-3c6"/>
                                             <constraint firstItem="gmU-1t-Ug8" firstAttribute="centerX" secondItem="ST2-oz-blf" secondAttribute="centerX" id="ohE-ZD-i7e"/>
                                             <constraint firstAttribute="trailing" secondItem="ms1-cp-2hV" secondAttribute="trailing" constant="30" id="qUu-fG-mdx"/>
                                             <constraint firstItem="lE5-09-3W1" firstAttribute="top" secondItem="pz1-gV-42U" secondAttribute="bottom" constant="20" id="r9e-40-hye"/>
-                                            <constraint firstItem="e2y-9e-pye" firstAttribute="top" secondItem="b3W-JI-V03" secondAttribute="top" constant="60" id="uya-Da-BVb"/>
+                                            <constraint firstItem="e2y-9e-pye" firstAttribute="top" secondItem="b3W-JI-V03" secondAttribute="top" constant="130" id="uya-Da-BVb"/>
                                             <constraint firstAttribute="trailing" secondItem="ST2-oz-blf" secondAttribute="trailing" id="xHf-Dg-lXP"/>
                                             <constraint firstItem="ms1-cp-2hV" firstAttribute="leading" secondItem="b3W-JI-V03" secondAttribute="leading" constant="30" id="yQz-IM-kfY"/>
                                             <constraint firstItem="e2y-9e-pye" firstAttribute="centerX" secondItem="b3W-JI-V03" secondAttribute="centerX" id="zNI-Py-bJB"/>
@@ -216,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tXW-cV-cIx">
@@ -6484,6 +6491,9 @@
         <image name="switch_on" width="116.33333587646484" height="64.333335876464844"/>
         <image name="unno" width="564" height="181"/>
         <image name="unno2" width="344" height="110"/>
+
+        <image name="unno_comp" width="313.66665649414062" height="169"/>
+
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -6494,13 +6504,9 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
         </systemColor>
     </resources>
 </document>
