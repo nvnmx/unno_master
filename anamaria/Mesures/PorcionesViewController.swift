@@ -173,7 +173,7 @@ class PorcionesViewController: UIViewController {
                 } else {
                     
                     if let fecha = cita!.object(forKey: "date") as? Date{
-                        self.lblFecha.text = "Última cita: " + self.getTodayString(date: fecha)
+                        self.lblFecha.text = "ÚLTIMA CITA: " + self.getTodayString(date: fecha)
                            }
                            
                            if let deshr = cita!.object(forKey: "dh_desayuno_hr") as? String{
