@@ -72,7 +72,7 @@ class AddAppoimentUserViewController: UIViewController,UIPickerViewDelegate,UIPi
             if(success){
                 self.dismiss(animated: true, completion: nil)
             }else{
-                self.createAlert(title: "Atención!", message: "No se guardo la cita correctamente")
+                self.createAlert(title: "Error", message: "No se guardó la cita correctamente")
             }
         }
     }
