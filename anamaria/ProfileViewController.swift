@@ -89,7 +89,7 @@ class ProfileViewController: UIViewController,UIPickerViewDelegate, UIPickerView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerData = ["VIUD@", "SOLTER@","DIVORCIAD@","CASAD@"]
+        pickerData = ["viudo/a", "soltero/a","divorciado/a","casado/a"]
         pickerDataV = ["VIUDO", "SOLTERO","DIVORCIADO","CASADO"]
         
         self.selEstadoCivil.delegate = self
@@ -164,7 +164,7 @@ class ProfileViewController: UIViewController,UIPickerViewDelegate, UIPickerView
                         if(success){
                             loader.hide(animated: true)
                             self.btnSaveProfile.isEnabled = true
-                            let alert = UIAlertController(title: "¡Listo!", message: "Tus datos han sido guardados.", preferredStyle: UIAlertController.Style.alert)
+                            let alert = UIAlertController(title: "¡Listo!", message: "Tus datos han sido guardados correctamente", preferredStyle: UIAlertController.Style.alert)
                             alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: { action in
                                 let _ = self.navigationController?.popViewController(animated: true)
                             }))
@@ -175,7 +175,7 @@ class ProfileViewController: UIViewController,UIPickerViewDelegate, UIPickerView
                         }else{
                             loader.hide(animated: true)
                             self.btnSaveProfile.isEnabled = true
-                            let alert = UIAlertController(title: "Atención", message: "Hubo un problema al guardar los datos, por favor intenté de nuevo.", preferredStyle: UIAlertController.Style.alert)
+                            let alert = UIAlertController(title: "Alerta", message: "Hubo un problema al guardar los datos. Por favor intente nuevamente", preferredStyle: UIAlertController.Style.alert)
                             alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: { action in
                                 let _ = self.navigationController?.popViewController(animated: true)
                             }))
@@ -187,15 +187,15 @@ class ProfileViewController: UIViewController,UIPickerViewDelegate, UIPickerView
                 else
                 {
                     loader.hide(animated: true)
-                    self.createAlert(title: "Atención", message: "Por favor agregue una foto al perfil")
+                    self.createAlert(title: "Alerta", message: "Agregue una foto al perfil")
                 }
             }else{
                 loader.hide(animated: true)
-                self.createAlert(title: "Atención", message: "Email inválido.")
+                self.createAlert(title: "Alerta", message: "E-mail inválido")
             }
         }else{
             loader.hide(animated: true)
-            self.createAlert(title: "Atención", message: "Llene todos los campos.")
+            self.createAlert(title: "Alerta", message: "Ingrese todos los campos")
         }
         
     }
@@ -223,7 +223,7 @@ class ProfileViewController: UIViewController,UIPickerViewDelegate, UIPickerView
                 
             }else{
                 
-                self.createAlert(title: "Atención!", message: "No se guardo la informacion correctamente")
+                self.createAlert(title: "Error", message: "No se guardó la información correctamente")
                 
             }
         }
