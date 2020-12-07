@@ -97,7 +97,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
         let toDay = Calendar.current.startOfDay(for: fechaHoy)
         if fechaCita < toDay
         {
-            self.createAlert(title: "Atención!", message: "La fecha no puede ser menor a hoy.")
+            self.createAlert(title: "Alerta", message: "La fecha seleccionada no puede ser anterior a hoy")
             return
         }
         let formatter = DateFormatter()
@@ -115,7 +115,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
             
             if hourCita <= hour
             {
-                self.createAlert(title: "Atención!", message: "La hora seleccionada ya ha pasado.")
+                self.createAlert(title: "Alerta", message: "La hora seleccionada ya ha pasado")
                 return
             }
             
@@ -125,7 +125,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
         if(self.paciente != nil){
             cita.setValue(self.paciente, forKey: "patient")
         }else{
-            self.createAlert(title: "Atención!", message: "Seleccione un paciente para la cita.")
+            self.createAlert(title: "Alerta", message: "Seleccione un paciente para la cita")
             return
         }
         
@@ -136,7 +136,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
                 self.dismiss(animated: true, completion: nil)
                 self.delegate!.dismissactualizarPacientes()
             }else{
-                self.createAlert(title: "Atención!", message: "No se guardo la cita correctamente")
+                self.createAlert(title: "Error", message: "No se guardó la cita correctamente")
             }
         }
     }
@@ -237,7 +237,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
                                 {
                                     let horaInicioS = obtenerHoraString(horario: i)
                                     let horaFinS = obtenerHoraString(horario: i + 0.5)
-                                    hourss.append(horaInicioS + " - " + horaFinS)
+                                    hourss.append(horaInicioS + " — " + horaFinS)
                                     horariosInicio.append(i)
                                     horariosFin.append(i+0.5)
                                 }
@@ -297,7 +297,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
                                 {
                                     let horaInicioS = obtenerHoraString(horario: i)
                                     let horaFinS = obtenerHoraString(horario: i + 1)
-                                    hourss.append(horaInicioS + " - " + horaFinS)
+                                    hourss.append(horaInicioS + " — " + horaFinS)
                                     horariosInicio.append(i)
                                     horariosFin.append(i+1)
                                 }
@@ -310,14 +310,14 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
         self.pickHour.reloadAllComponents()
         if hourss.count > 0
         {
-            self.lblToday.text = "\(todayStr) Horario: \(hourss[0]) "
+            self.lblToday.text = "\(todayStr)\n\(hourss[0]) "
             self.hrIni = obtenerHoraString(horario: horariosInicio[0])
             self.hrFin = obtenerHoraString(horario: horariosFin[0])
         }
         else
         {
             
-            self.createAlert(title: "Atención!", message: "No tiene configurado ningun calendario para este dia, por favor delo de alta.")
+            self.createAlert(title: "Alerta", message: "No hay un horario de consulta para este día. Asígnalo en el apartado de Configuraciones")
             self.dismiss(animated: true, completion: nil)
         }
         
@@ -453,7 +453,7 @@ class AddAppoimentViewController: UIViewController,UIPickerViewDelegate,UIPicker
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         
-        self.lblToday.text = "\(todayStr) Horario: \(hourss[row]) "
+        self.lblToday.text = "\(todayStr)\n\(hourss[row]) "
         self.hrIni = obtenerHoraString(horario: horariosInicio[row])
         self.hrFin = obtenerHoraString(horario: horariosFin[row])
         
