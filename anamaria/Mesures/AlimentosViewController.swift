@@ -32,7 +32,7 @@ class AlimentosViewController: UITableViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        datosAlimentos = [CellData(open: false, titulo: "VERDURAS", sectionData: [Alimento(nombre: "Acelgas crudas", tazas: "2 tazas"),Alimento(nombre: "Alcachofa cocida", tazas: "1 pieza"),Alimento(nombre: "Apio", tazas: "1 1/2 taza"),Alimento(nombre: "Arúgula", tazas: "4 tazas"),Alimento(nombre: "Betabel crudo rallado", tazas: "1/4 taza"),Alimento(nombre: "Brócoli Cocido", tazas: "1/2 taza"),Alimento(nombre: "Calabacita", tazas: "1 pieza"),Alimento(nombre: "Cebolla", tazas: "1/2 taza"),Alimento(nombre: "Champiñones Cocidos", tazas: "1/2 taza"),Alimento(nombre: "Chayote", tazas: "1/2 taza"),Alimento(nombre: "Chícharo", tazas: "1/2 taza"),Alimento(nombre: "Chile", tazas: "3 piezas"),Alimento(nombre: "Cilantro", tazas: "2 tazas"),Alimento(nombre: "Col", tazas: "1 taza"),Alimento(nombre: "Coliflor", tazas: "1 taza"),Alimento(nombre: "Ejotes", tazas: "1/2 taza"),Alimento(nombre: "Espárragos", tazas: "6 piezas"),Alimento(nombre: "Espinaca", tazas: "2 tazas"),Alimento(nombre: "Gérmen de Soya", tazas: "1/3 taza"),Alimento(nombre: "Jícama", tazas: "1/2 taza"),Alimento(nombre: "Jitomate", tazas: "1 pieza"),Alimento(nombre: "Lechuga", tazas: "3 tazas"),Alimento(nombre: "Nopal", tazas: "2 piezas"),Alimento(nombre: "Pepino", tazas: "1 taza"),Alimento(nombre: "Pimiento", tazas: "1 pieza"),Alimento(nombre: "Setas", tazas: "1/2 taza"),Alimento(nombre: "Zanahoria", tazas: "1/2 taza")], color:UIColor(hexFromString: "ACB66F")),CellData(open: false, titulo: "LEGUMINOSAS", sectionData: [Alimento(nombre: "Frijoles Cocidos", tazas: "1/2 taza"),Alimento(nombre: "Garbanzos Cocidos", tazas: "1/2 taza"),Alimento(nombre: "Habas Cocidas", tazas: "1/2 taza"),Alimento(nombre: "Hummus", tazas: "5 cucharadas"),Alimento(nombre: "Lentejas Cocidas", tazas: "1/2 taza"),Alimento(nombre: "Soya cocida", tazas: "1/3 taza")], color:UIColor(hexFromString: "7A4541")),CellData(open: false, titulo: "LÁCTEOS", sectionData: [Alimento(nombre: "Leche de Soya", tazas: "1 taza"),Alimento(nombre: "Leche Descremada / Light", tazas: "1 taza"),Alimento(nombre: "Yogurt natural", tazas: "3/4 taza")], color:UIColor(hexFromString: "5990BF")),CellData(open: false, titulo: "FRUTAS", sectionData: [Alimento(nombre: "Caña de azúcar", tazas: "250 g"),Alimento(nombre: "Carambolo", tazas: "1 1/2 pieza"),Alimento(nombre: "Ciruela roja", tazas: "3 piezas"),Alimento(nombre: "Durazno", tazas: "2 piezas"),Alimento(nombre: "Frambuesas", tazas: "1 taza"),Alimento(nombre: "Fresas", tazas: "17 piezas"),Alimento(nombre: "Granada china", tazas: "2 piezas"),Alimento(nombre: "Granada roja", tazas: "1 pieza"),Alimento(nombre: "Guayaba", tazas: "3 piezas"),Alimento(nombre: "Higo", tazas: "2 piezas"),Alimento(nombre: "Jugo de Naranja Nat", tazas: "1/2 taza"),Alimento(nombre: "Kiwi", tazas: "1 1/2 piezas"),Alimento(nombre: "Lichis", tazas: "12 piezas"),Alimento(nombre: "Lima", tazas: "3 piezas"),Alimento(nombre: "Mamey", tazas: "1/3 pieza"),Alimento(nombre: "Mandarina", tazas: "1 pieza"),Alimento(nombre: "Mango", tazas: "1 pieza"),Alimento(nombre: "Manzana", tazas: "1 pieza"),Alimento(nombre: "Maracuyá", tazas: "3 piezas"),Alimento(nombre: "Melón", tazas: "1 taza"),Alimento(nombre: "Naranja", tazas: "2 piezas"),Alimento(nombre: "Papaya", tazas: "1 taza"),Alimento(nombre: "Pasas", tazas: "10 piezas"),Alimento(nombre: "Pera", tazas: "1/2 pieza"),Alimento(nombre: "Piña", tazas: "3/4 taza"),Alimento(nombre: "Plátano", tazas: "1/2 taza"),Alimento(nombre: "Sandía", tazas: "1 taza"),Alimento(nombre: "Tamarindo", tazas: "50 g"),Alimento(nombre: "Toronja", tazas: "1 pieza"),Alimento(nombre: "Tuna", tazas: "2 piezas"),Alimento(nombre: "Uva", tazas: "18 piezas")],color:UIColor(hexFromString: "E0A273")),
+        datosAlimentos = [CellData(open: false, titulo: "VERDURAS", sectionData: [Alimento(nombre: "Acelgas crudas", tazas: "2 tazas"),Alimento(nombre: "Alcachofa cocida", tazas: "1 pieza"),Alimento(nombre: "Apio", tazas: "1 1/2 taza"),Alimento(nombre: "Arúgula", tazas: "4 tazas"),Alimento(nombre: "Betabel crudo rallado", tazas: "1/4 taza"),Alimento(nombre: "Brócoli Cocido", tazas: "1/2 taza"),Alimento(nombre: "Calabacita", tazas: "1 pieza"),Alimento(nombre: "Cebolla", tazas: "1/2 taza"),Alimento(nombre: "Champiñones Cocidos", tazas: "1/2 taza"),Alimento(nombre: "Chayote", tazas: "1/2 taza"),Alimento(nombre: "Chícharo", tazas: "1/2 taza"),Alimento(nombre: "Chile", tazas: "3 piezas"),Alimento(nombre: "Cilantro", tazas: "2 tazas"),Alimento(nombre: "Col", tazas: "1 taza"),Alimento(nombre: "Coliflor", tazas: "1 taza"),Alimento(nombre: "Ejotes", tazas: "1/2 taza"),Alimento(nombre: "Espárragos", tazas: "6 piezas"),Alimento(nombre: "Espinaca", tazas: "2 tazas"),Alimento(nombre: "Gérmen de Soya", tazas: "1/3 taza"),Alimento(nombre: "Jícama", tazas: "1/2 taza"),Alimento(nombre: "Jitomate", tazas: "1 pieza"),Alimento(nombre: "Lechuga", tazas: "3 tazas"),Alimento(nombre: "Nopal", tazas: "2 piezas"),Alimento(nombre: "Pepino", tazas: "1 taza"),Alimento(nombre: "Pimiento", tazas: "1 pieza"),Alimento(nombre: "Setas", tazas: "1/2 taza"),Alimento(nombre: "Zanahoria", tazas: "1/2 taza")], color:UIColor(hexFromString: "B6D7A8")),CellData(open: false, titulo: "LEGUMINOSAS", sectionData: [Alimento(nombre: "Frijoles Cocidos", tazas: "1/2 taza"),Alimento(nombre: "Garbanzos Cocidos", tazas: "1/2 taza"),Alimento(nombre: "Habas Cocidas", tazas: "1/2 taza"),Alimento(nombre: "Hummus", tazas: "5 cucharadas"),Alimento(nombre: "Lentejas Cocidas", tazas: "1/2 taza"),Alimento(nombre: "Soya cocida", tazas: "1/3 taza")], color:UIColor(hexFromString: "F0C28D")),CellData(open: false, titulo: "LÁCTEOS", sectionData: [Alimento(nombre: "Leche de Soya", tazas: "1 taza"),Alimento(nombre: "Leche Descremada / Light", tazas: "1 taza"),Alimento(nombre: "Yogurt natural", tazas: "3/4 taza")], color:UIColor(hexFromString: "F3F3F3")),CellData(open: false, titulo: "FRUTAS", sectionData: [Alimento(nombre: "Caña de azúcar", tazas: "250 g"),Alimento(nombre: "Carambolo", tazas: "1 1/2 pieza"),Alimento(nombre: "Ciruela roja", tazas: "3 piezas"),Alimento(nombre: "Durazno", tazas: "2 piezas"),Alimento(nombre: "Frambuesas", tazas: "1 taza"),Alimento(nombre: "Fresas", tazas: "17 piezas"),Alimento(nombre: "Granada china", tazas: "2 piezas"),Alimento(nombre: "Granada roja", tazas: "1 pieza"),Alimento(nombre: "Guayaba", tazas: "3 piezas"),Alimento(nombre: "Higo", tazas: "2 piezas"),Alimento(nombre: "Jugo de Naranja Nat", tazas: "1/2 taza"),Alimento(nombre: "Kiwi", tazas: "1 1/2 piezas"),Alimento(nombre: "Lichis", tazas: "12 piezas"),Alimento(nombre: "Lima", tazas: "3 piezas"),Alimento(nombre: "Mamey", tazas: "1/3 pieza"),Alimento(nombre: "Mandarina", tazas: "1 pieza"),Alimento(nombre: "Mango", tazas: "1 pieza"),Alimento(nombre: "Manzana", tazas: "1 pieza"),Alimento(nombre: "Maracuyá", tazas: "3 piezas"),Alimento(nombre: "Melón", tazas: "1 taza"),Alimento(nombre: "Naranja", tazas: "2 piezas"),Alimento(nombre: "Papaya", tazas: "1 taza"),Alimento(nombre: "Pasas", tazas: "10 piezas"),Alimento(nombre: "Pera", tazas: "1/2 pieza"),Alimento(nombre: "Piña", tazas: "3/4 taza"),Alimento(nombre: "Plátano", tazas: "1/2 taza"),Alimento(nombre: "Sandía", tazas: "1 taza"),Alimento(nombre: "Tamarindo", tazas: "50 g"),Alimento(nombre: "Toronja", tazas: "1 pieza"),Alimento(nombre: "Tuna", tazas: "2 piezas"),Alimento(nombre: "Uva", tazas: "18 piezas")],color:UIColor(hexFromString: "C27BA0")),
                           CellData(open: false, titulo: "CEREALES", sectionData: [
                             Alimento(nombre: "Amaranto", tazas: "1/4 taza"),
                             Alimento(nombre: "Arroz", tazas: "1/2 taza"),
@@ -62,7 +62,7 @@ class AlimentosViewController: UITableViewController {
                             Alimento(nombre: "Puré de papa", tazas: "1/3 taza"),Alimento(nombre: "Quinoa", tazas: "1/4 taza"),
                             Alimento(nombre: "Tapioca", tazas: "2 cucharadas"),Alimento(nombre: "Tortilla de maíz", tazas: "1 pieza"),
                             Alimento(nombre: "Tortilla de nopal", tazas: "2 piezas"),Alimento(nombre: "Tortilla de Harina Integral", tazas: "1 pieza"),
-                            Alimento(nombre: "Tostada de maíz", tazas: "2 piezas"),Alimento(nombre: "Tostada de nopal", tazas: "2 piezas")], color:UIColor(hexFromString: "E3CD5A")),CellData(open: false, titulo: "ALIMENTOS DE ORIGEN ANIMAL", sectionData: [
+                            Alimento(nombre: "Tostada de maíz", tazas: "2 piezas"),Alimento(nombre: "Tostada de nopal", tazas: "2 piezas")], color:UIColor(hexFromString: "FFD966")),CellData(open: false, titulo: "ALIMENTOS DE ORIGEN ANIMAL", sectionData: [
                                 Alimento(nombre: "Atún en agua", tazas: "1/2 lata"),
                             Alimento(nombre: "Arrachera", tazas: "30 g"),
                             Alimento(nombre: "Bistec de res", tazas: "30 g"),
@@ -80,16 +80,16 @@ class AlimentosViewController: UITableViewController {
                             Alimento(nombre: "Queso Panela", tazas: "40 g"),
                             Alimento(nombre: "Queso Oaxaca", tazas: "30 g"),
                             Alimento(nombre: "Salchicha de Pavo", tazas: "1 pieza"),
-                            Alimento(nombre: "Salmón", tazas: "35 g")], color:UIColor(hexFromString: "C86466")),CellData(open: false, titulo: "GRASAS", sectionData: [Alimento(nombre: "Aceite (varios)", tazas: "1 cucharada # 3"),
+                            Alimento(nombre: "Salmón", tazas: "35 g")], color:UIColor(hexFromString: "E06666")),CellData(open: false, titulo: "GRASAS", sectionData: [Alimento(nombre: "Aceite (varios)", tazas: "1 cucharada"),
                             Alimento(nombre: "Aceite en spray", tazas: "5 disparos de un segundo"),
                             Alimento(nombre: "Aceitunas", tazas: "5 piezas"),
-                            Alimento(nombre: "Aderezo", tazas: "3 cucharadas # 3"),
+                            Alimento(nombre: "Aderezo", tazas: "3 cucharadas"),
                             Alimento(nombre: "Aguacate", tazas: "1/3 pieza"),
                             Alimento(nombre: "Coco", tazas: "1/4 pieza"),
-                            Alimento(nombre: "Crema Light", tazas: "5 cucharadas # 3"),
-                            Alimento(nombre: "Mayonesa", tazas: "1 cucharada # 3"),
-                            Alimento(nombre: "Queso Crema", tazas: "2 cucharadas # 3")], color:UIColor(hexFromString: "E0B75B")), CellData(open: false, titulo: "GRASAS CON PROTEÍNA", sectionData: [
-                                Alimento(nombre: "Ajonjolí", tazas: "4 cucharadas # 3"),
+                            Alimento(nombre: "Crema Light", tazas: "5 cucharadas"),
+                            Alimento(nombre: "Mayonesa", tazas: "1 cucharada"),
+                            Alimento(nombre: "Queso Crema", tazas: "2 cucharadas")], color:UIColor(hexFromString: "76A5AF")), CellData(open: false, titulo: "GRASAS CON PROTEÍNA", sectionData: [
+                                Alimento(nombre: "Ajonjolí", tazas: "4 cucharadas"),
                             Alimento(nombre: "Almendra", tazas: "10 piezas"),
                             Alimento(nombre: "Cacahuate", tazas: "14 piezas"),
                             Alimento(nombre: "Chía", tazas: "7 cucharadas"),
@@ -97,14 +97,14 @@ class AlimentosViewController: UITableViewController {
                             Alimento(nombre: "Mantequilla de Cacahuate", tazas: "2 cucharadas # 3"),
                             Alimento(nombre: "Nueces", tazas: "6 piezas"),
                             Alimento(nombre: "Nuez de la India", tazas: "7 piezas"),
-                            Alimento(nombre: "Pepitas", tazas: "1 cucharada # 3"),
-                            Alimento(nombre: "Piñón", tazas: "1 cucharada # 3"),
+                            Alimento(nombre: "Pepitas", tazas: "1 cucharada"),
+                            Alimento(nombre: "Piñón", tazas: "1 cucharada"),
                             Alimento(nombre: "Pistache", tazas: "18 piezas"),
-                            Alimento(nombre: "Queso de Puerco", tazas: "20 g")], color:UIColor(hexFromString: "B7AEBF")),CellData(open: false, titulo: "AZÚCARES", sectionData: [
-                                Alimento(nombre: "Azúcares de mesa", tazas: "2 cucharadas # 3"),
-                            Alimento(nombre: "Cajeta", tazas: "1.5 cucharadas # 3"),
+                            Alimento(nombre: "Queso de Puerco", tazas: "20 g")], color:UIColor(hexFromString: "D5A6BD")),CellData(open: false, titulo: "AZÚCARES", sectionData: [
+                                Alimento(nombre: "Azúcares de mesa", tazas: "2 cucharadas"),
+                            Alimento(nombre: "Cajeta", tazas: "1.5 cucharadas"),
                             Alimento(nombre: "Gelatina", tazas: "1/3 taza"),
-                            Alimento(nombre: "Mermelada", tazas: "2.5 cucharadas # 3")], color:UIColor(hexFromString: "944149")),CellData(open: false, titulo: "ALIMENTOS LIBRES", sectionData: [
+                            Alimento(nombre: "Mermelada", tazas: "2.5 cucharadas")], color:UIColor(hexFromString: "C9DAF8")),CellData(open: false, titulo: "ALIMENTOS LIBRES", sectionData: [
                                 Alimento(nombre: "Vinagre", tazas: ""),
                             Alimento(nombre: "Agua Mineral", tazas: ""),
                             Alimento(nombre: "Ajo", tazas: ""),
@@ -125,12 +125,7 @@ class AlimentosViewController: UITableViewController {
                             Alimento(nombre: "Chiles (varios)", tazas: ""),
                             Alimento(nombre: "Sal", tazas: ""),
                             Alimento(nombre: "Salsa Inglesa", tazas: ""),
-                            Alimento(nombre: "Salsa de Soya", tazas: "")], color:UIColor(hexFromString: "E6CC57") ),CellData(open: false, titulo: "CONSEJOS", sectionData: [
-                                Alimento(nombre: "Prefiere siempre lo integral y elimina lo refinado", tazas: "Mastica lo más que puedas tus alimentos y trata de comer despacio"),
-                            Alimento(nombre: "Evita las grasas saturadas y los alimentos fritos", tazas: "Disminuye la cantidad de irritantes y alcohol"),
-                            Alimento(nombre: "Duerme mínimo 7 horas diarias por la noche", tazas: "Disfruta tus alimentos y saboréalos"),
-                            Alimento(nombre: "Concéntrate en tus platillos y retira cualquier distractor a la hora de comer", tazas: "Realiza el ejercicio recomendado"),
-                            Alimento(nombre: "Evita al máximo los alimentos procesados", tazas: "")], color:UIColor(hexFromString: "6A3444"))]
+                            Alimento(nombre: "Salsa de Soya", tazas: "")], color:UIColor(hexFromString: "D9D9D9") )]
         
     }
     
