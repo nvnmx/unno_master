@@ -39,7 +39,7 @@ class PopBalanceViewController: UIViewController {
         let amount = self.txtAmount.text ?? "0"
         
         if(Int(amount) == 0){
-            self.createAlert(title: "Atención!", message: "La cantidad no es valida.")
+            self.createAlert(title: "Alerta", message: "La cantidad no es válida")
             return
         }
         
@@ -55,11 +55,11 @@ class PopBalanceViewController: UIViewController {
                     self.dismiss(animated: true, completion: nil)
                     self.delegate.actualizarMontos()
                 }else{
-                    self.createAlert(title: "Atención!", message: "No se guardo el balance correctamente")
+                    self.createAlert(title: "Error", message: "No se guardó el balance correctamente")
                 }
             }
         }else{
-            self.createAlert(title: "Atención", message: "Ingresa concepto y cantidad para continuar.")
+            self.createAlert(title: "Alerta", message: "Ingrese concepto y cantidad para continuar")
         }
         
     }
@@ -81,7 +81,7 @@ class PopBalanceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewPopBalnce.layer.cornerRadius = 20
+        self.viewPopBalnce.layer.cornerRadius = 10
         self.viewPopBalnce.layer.masksToBounds = true
         self.setBtnStyle(view: self.btnSave)
        
