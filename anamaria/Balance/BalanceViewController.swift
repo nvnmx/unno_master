@@ -158,7 +158,7 @@ class BalanceViewController: UIViewController,PopBalanceViewControllerProtocol {
         let firstDate = "\(year)-\(month)-\(newDay)T00:00:00"
         let lastDate = "\(year)-\(month)-\(day+1)T11:59:00"
         
-      print("DATE semana \(firstDate) - \(lastDate)")
+      print("DATE semana \(firstDate) — \(lastDate)")
         let queryBa =  PFQuery(className: "Balance")
         //queryBa.cachePolicy = .networkElseCache lessThanOrEqualTo
         queryBa.whereKey("createdAt", greaterThanOrEqualTo: getDate(dateString: firstDate) ?? Date())
@@ -237,7 +237,7 @@ class BalanceViewController: UIViewController,PopBalanceViewControllerProtocol {
         let firstDate = "\(year)-\(month)-\(1)T00:00:00"
         let lastDate = "\(year)-\(month)-\(last)T11:59:00"
         
-        print("DATE mes \(firstDate) - \(lastDate)")
+        print("DATE mes \(firstDate) — \(lastDate)")
         let queryBa =  PFQuery(className: "Balance")
         //queryBa.cachePolicy = .networkElseCache lessThanOrEqualTo
         queryBa.whereKey("createdAt", greaterThanOrEqualTo: getDate(dateString: firstDate) ?? Date())
@@ -331,7 +331,7 @@ class BalanceViewController: UIViewController,PopBalanceViewControllerProtocol {
         
         self.btnT.setTitle(nombrePrimer.uppercased().prefix(3)+" - "+nombreSegundo.uppercased().prefix(3), for: .normal)
         
-        print("DATE trim \(firstDate) - \(lastDate)")
+        print("DATE trim \(firstDate) — \(lastDate)")
         
         let queryBa =  PFQuery(className: "Balance")
         //queryBa.cachePolicy = .networkElseCache lessThanOrEqualTo
