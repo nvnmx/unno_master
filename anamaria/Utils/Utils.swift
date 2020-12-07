@@ -101,9 +101,9 @@ extension UIViewController{
     }
     
     func setBtnStyle(view : UIView){
-        view.layer.borderColor = UIColor(red:0.41, green:0.20, blue:0.94, alpha:1.0).cgColor
-        view.layer.cornerRadius = 35
-        view.layer.borderWidth = 2.5
+        view.layer.borderColor = UIColor(red:0.44, green:0.31, blue:0.85, alpha:1.0).cgColor
+        view.layer.cornerRadius = 25
+        view.layer.borderWidth = 2.3
     }
     
     
@@ -123,9 +123,9 @@ extension UIViewController{
         view.layer.borderWidth = 0.1
         view.layer.borderColor = UIColor.white.cgColor
         view.layer.shadowColor = UIColor(red:0.29, green:0.29, blue:0.40, alpha:1.0).cgColor
-        view.layer.shadowOpacity = 0.3
-        view.layer.shadowOffset = CGSize.zero
-        view.layer.shadowRadius = 5
+        view.layer.shadowOpacity = 0.2
+        view.layer.shadowOffset = CGSize(width: 0, height: 4)
+        view.layer.shadowRadius = 6.5
     }
    
     
