@@ -534,7 +534,7 @@ extension UserProfileViewController : UITableViewDelegate,UITableViewDataSource{
                                 notiNutriologo.setValue("eli", forKey: "tipo")
                                 notiNutriologo.setValue(false, forKey: "isRead")
                                 notiNutriologo.setValue(user, forKey: "userCita")
-                                notiNutriologo.setValue(horaInicio! + " - " + horaFin!, forKey: "schedule")
+                                notiNutriologo.setValue(horaInicio! + " — " + horaFin!, forKey: "schedule")
                                 
                                 notiNutriologo.saveInBackground { (suc,err) in
                                     if(suc)
@@ -551,7 +551,7 @@ extension UserProfileViewController : UITableViewDelegate,UITableViewDataSource{
                                 notiPaciente.setValue(false, forKey: "isRead")
                                 notiPaciente.setValue(user, forKey: "userCita")
                                 notiPaciente.setValue("eli", forKey: "tipo")
-                                notiPaciente.setValue(horaInicio! + " - " + horaFin!, forKey: "schedule")
+                                notiPaciente.setValue(horaInicio! + " — " + horaFin!, forKey: "schedule")
                                 
                                 notiPaciente.saveInBackground { (suce,erro) in
                                     if(suce)
