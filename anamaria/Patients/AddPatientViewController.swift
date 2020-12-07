@@ -25,7 +25,7 @@ class AddPatientViewController: UIViewController {
     @IBOutlet weak var ttEmailAdd: UITextField!
     @IBOutlet weak var ttNameAdd: UITextField!
     @IBOutlet weak var ttPhone: UITextField!
-    @IBOutlet weak var ttMetas: UITextField!
+      @IBOutlet weak var ttMetas: UITextField!
     @IBOutlet weak var ttLast: UITextField!
     @IBOutlet weak var ttAge: UITextField!
     @IBOutlet weak var ttPass: UITextField!
@@ -69,7 +69,7 @@ class AddPatientViewController: UIViewController {
         
         if decimalR != nil || decimalL != nil
         {
-            self.createAlert(title: "Atención", message: "No se permiten numeros en nombre y apellido")
+            self.createAlert(title: "Alerta", message: "No se permiten números en Nombre y Apellidos")
         }
         else
         {
@@ -84,78 +84,46 @@ class AddPatientViewController: UIViewController {
                         
                         if(self.ttPhone.text!.count > 6 && self.ttPhone.text!.count < 11){
                             //patient
+                            let user = PFObject(className: "UserPatient")
                             
+                            user.setValue(ttEmailAdd.text!, forKey: "username")
+                            user.setValue(ttEmailAdd.text!, forKey: "password")
+                            user.setValue(ttEmailAdd.text!, forKey:"email")
                             
-                            let queryApp = PFQuery(className: "_User")
+                            user.setValue(ttPhone.text!, forKey: "phone")
+                            user.setValue(ttAge.text!, forKey: "age")
+                            user.setValue(ttLast.text!, forKey:"lastName")
+                            user.setValue(genre, forKey:"genre")
+                            user.setValue(ttNameAdd.text!, forKey:"name")
+                            user.setValue("patient", forKey:"typeUser")
+                           // user.setValue(ttMetas.text!, forKey:"golds")
+                            user.setValue(PFUser.current(), forKey:"nutritionist")
+                            user.setValue(PFUser.current()?.objectId, forKey:"nutritionistId")
+                            user.setValue(btnTutor.isSelected, forKey:"isTutor")
                             
-                            queryApp.whereKey("username", equalTo: ttEmailAdd.text!)
-                            
-                            
-                            
-                            queryApp.findObjectsInBackground { (objects, error) in
-                                
-                                
-                                if(error == nil ){
+                            user.saveInBackground { (success, error) in
+                                if let error = error {
+                                    self.createAlert(title: "Atención", message: "Error al crear paciente")
+                                    print("Signup error: \(error.localizedDescription)")
+                                } else {
                                     
-                                    if (objects?.count == 0)
-                                    {
-                                        let user = PFObject(className: "UserPatient")
-                                        
-                                        user.setValue(self.ttEmailAdd.text!, forKey: "username")
-                                        user.setValue(self.ttEmailAdd.text!, forKey: "password")
-                                        user.setValue(self.ttEmailAdd.text!, forKey:"email")
-                                        
-                                        user.setValue(self.ttPhone.text!, forKey: "phone")
-                                        user.setValue(self.ttAge.text!, forKey: "age")
-                                        user.setValue(self.ttLast.text!, forKey:"lastName")
-                                        user.setValue(self.genre, forKey:"genre")
-                                        user.setValue(self.ttNameAdd.text!, forKey:"name")
-                                        user.setValue("patient", forKey:"typeUser")
-                                        // user.setValue(ttMetas.text!, forKey:"golds")
-                                        user.setValue(PFUser.current(), forKey:"nutritionist")
-                                        user.setValue(PFUser.current()?.objectId, forKey:"nutritionistId")
-                                        user.setValue(self.btnTutor.isSelected, forKey:"isTutor")
-                                        
-                                        user.saveInBackground { (success, error) in
-                                            if let error = error {
-                                                self.createAlert(title: "Atención", message: "Error al crear paciente")
-                                                print("Signup error: \(error.localizedDescription)")
-                                            } else {
-                                                
-                                                self.dismiss(animated: true, completion: nil)
-                                                self.delegateNuevoPaciente.actualizarInfo()
-                                            }
-                                        }
-                                    }
-                                    else
-                                    {
-                                        self.createAlert(title: "Atención", message: "Un usuario con ese correo ya existe, por favor verifique")
-                                    }
-                                    
+                                    self.dismiss(animated: true, completion: nil)
+                                    self.delegateNuevoPaciente.actualizarInfo()
                                 }
-                                else
-                                {
-                                    self.createAlert(title: "Atención", message: "No se pudo obtener información, intente de nuevo")
-                                    
-                                    
-                                }
-                            }
-                            
-                            
-                            
+                            }         
                         }else{
-                            self.createAlert(title: "Atención", message: "Ingrese un teléfono correcto, mínimo 7 y máximo 10.")
+                            self.createAlert(title: "Alerta", message: "Ingrese un teléfono correcto (7 a 10 dígitos)")
                         }
                     }else{
-                        self.createAlert(title: "Atención", message: "Ingrese un correo válido")
+                        self.createAlert(title: "Alerta", message: "Ingrese un e-mail válido")
                     }
                 }
                 else
                 {
-                    self.createAlert(title: "Atención", message: "La edad debe de ser mayor a 0")
+                    self.createAlert(title: "Alerta", message: "La edad debe de ser mayor a 0")
                 }
             }else{
-                self.createAlert(title: "Atención", message: "Llene todos los campos")
+                self.createAlert(title: "Alerta", message: "Ingrese todos los campos")
             }
         }
     }
