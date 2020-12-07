@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Lato-Medium.ttf">
-            <string>Lato-Medium</string>
+        <array key="clarikageo-medium.otf">
+            <string>ClarikaGeometric-Medium</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderNotification" customModule="anamaria" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderNotification" customModule="Unno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Se9-xS-Ywd">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVo-DP-45X">
-                            <rect key="frame" x="20" y="25" width="374" height="0.0"/>
-                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="25"/>
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="20" y="20" width="374" height="0.0"/>
+                            <fontDescription key="fontDescription" name="ClarikaGeometric-Medium" family="Clarika Geometric" pointSize="32"/>
+                            <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -35,12 +33,13 @@
                     <constraints>
                         <constraint firstItem="vVo-DP-45X" firstAttribute="leading" secondItem="Se9-xS-Ywd" secondAttribute="leading" constant="20" id="NMa-88-TrP"/>
                         <constraint firstItem="vVo-DP-45X" firstAttribute="centerX" secondItem="Se9-xS-Ywd" secondAttribute="centerX" id="TPl-lb-cdu"/>
-                        <constraint firstAttribute="height" constant="50" id="Tad-zJ-zgn"/>
+                        <constraint firstAttribute="height" constant="40" id="Tad-zJ-zgn"/>
                         <constraint firstItem="vVo-DP-45X" firstAttribute="centerY" secondItem="Se9-xS-Ywd" secondAttribute="centerY" id="k9Q-Ry-isB"/>
                         <constraint firstAttribute="trailing" secondItem="vVo-DP-45X" secondAttribute="trailing" constant="20" id="vId-vl-xTz"/>
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Se9-xS-Ywd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N52-kJ-ryu"/>
@@ -48,12 +47,12 @@
                 <constraint firstAttribute="trailing" secondItem="Se9-xS-Ywd" secondAttribute="trailing" id="mjd-by-8ze"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="contenView" destination="Se9-xS-Ywd" id="MmO-9u-thx"/>
                 <outlet property="heigt" destination="Tad-zJ-zgn" id="wvb-Jc-Zwf"/>
                 <outlet property="lblTitle" destination="vVo-DP-45X" id="CvD-69-535"/>
             </connections>
+            <point key="canvasLocation" x="-39" y="88"/>
         </view>
     </objects>
 </document>
