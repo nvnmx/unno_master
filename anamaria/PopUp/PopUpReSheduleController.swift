@@ -45,12 +45,12 @@ class PopUpReSheduleController: UIViewController {
         
         if(getTypeUser())
         {
-            lblNotificado.text = "El Nutriólogo será notificado del ajuste de la cita"
+            lblNotificado.text = "Su nutriólogo será notificado del ajuste de la cita"
         }
         else
             
         {
-            lblNotificado.text = "El Paciente será notificado del ajuste de la cita"
+            lblNotificado.text = "El paciente será notificado del ajuste de la cita"
         }
         
         btnAceptar.layer.borderWidth = 2.0
@@ -170,7 +170,7 @@ class PopUpReSheduleController: UIViewController {
                 self.delegate.actualizarCita()
                 
             }else{
-                self.createAlert(title: "Atención!", message: "No se actualizó la cita correctamente")
+                self.createAlert(title: "Error", message: "No se actualizó la cita correctamente")
             }
         }
         
