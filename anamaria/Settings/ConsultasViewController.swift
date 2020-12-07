@@ -306,14 +306,14 @@ class ConsultasViewController: UIViewController {
             
             if seEmpalma
             {
-                self.createAlert(title: "Atención!", message: "El Horario se ya esta incluido en otro horario, por favor verifique")
+                self.createAlert(title: "Error", message: "El horario ya está incluído en otro anterior. Por favor verifique")
             }
             else
             {
                 
                 if estanAlReves
                 {
-                    self.createAlert(title: "Atención!", message: "El Horario inicial no puede ser mayor o igual al final, por favor verifique")
+                    self.createAlert(title: "Error", message: "El horario inicial no puede ser mayor o igual al final. Por favor verifique")
                 }
                 else
                 {
@@ -332,7 +332,7 @@ class ConsultasViewController: UIViewController {
                                 
                                 self.setData()
                             }else{
-                                self.createAlert(title: "Atención!", message: "No se guardo el Horario correctamente")
+                                self.createAlert(title: "Alerta", message: "No se guardó el horario correctamente")
                             }
                         }
                     }
@@ -341,7 +341,7 @@ class ConsultasViewController: UIViewController {
         }
         else
         {
-            self.createAlert(title: "Atención!", message: "Seleccione algun dìa")
+            self.createAlert(title: "Alerta", message: "Seleccione algún día")
         }
         
     }
@@ -444,7 +444,7 @@ extension ConsultasViewController: UITableViewDelegate,UITableViewDataSource{
                     self.setData()
                     
                 }else{
-                    self.createAlert(title: "Atención!", message: "No se pudo borrar el horario")
+                    self.createAlert(title: "Alerta", message: "No se pudo borrar el horario")
                 }
             }
             
@@ -467,7 +467,7 @@ extension ConsultasViewController: UITableViewDelegate,UITableViewDataSource{
         
         let horaFin = noti.object(forKey: "lastHour") as? String
         
-        horarioCompleto = horaIni! + " - " + horaFin!
+        horarioCompleto = horaIni! + " — " + horaFin!
         
         cell.lblHorario.text = horarioCompleto
         
