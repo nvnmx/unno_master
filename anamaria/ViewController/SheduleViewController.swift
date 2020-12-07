@@ -299,7 +299,7 @@ class SheduleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
            }
            else
            {
-                self.createAlert(title: "Atención!", message: "No tiene configurado ningun calendario para este dia, por favor delo de alta.")
+                self.createAlert(title: "Alerta", message: "No hay un horario de consulta para este día. Asígnalo en el apartado de Configuraciones")
            }
            
        }
@@ -547,7 +547,7 @@ class SheduleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         let fechaCita = Calendar.current.startOfDay(for: self.genDate)
         if fechaCita < toDay
         {
-            self.createAlert(title: "Atención!", message: "La fecha no puede ser menor a hoy.")
+            self.createAlert(title: "Alerta", message: "La fecha seleccionada no puede ser anterior a hoy")
             return
         }
         let formatter = DateFormatter()
@@ -565,7 +565,7 @@ class SheduleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
             
             if hourCita <= hour
             {
-                self.createAlert(title: "Atención!", message: "La hora seleccionada ya ha pasado.")
+                self.createAlert(title: "Alerta", message: "La hora seleccionada ya ha pasado")
                 return
             }
             
@@ -573,7 +573,7 @@ class SheduleViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         
         
         if self.hrIni == ""{
-            self.createAlert(title: "Atención!", message: "Seleccione un horario")
+            self.createAlert(title: "Alerta", message: "Seleccione un horario")
             return
         }
         
@@ -621,7 +621,7 @@ extension SheduleViewController: FSCalendarDataSource, FSCalendarDelegate{
         self.lblMonth.text = "\(monthsStr[components.month! - 1]) \(components.year!)"
         let weekDay = weekDays[components.weekday! - 1]
         if(!self.week.contains("\(String(describing: weekDay))")){
-            self.createAlert(title: "Atención!", message: "El día no esta disponible.")
+            self.createAlert(title: "Alerta", message: "El día seleccionado no está disponible")
         }
     }
     func minimumDate(for calendar: FSCalendar) -> Date {
