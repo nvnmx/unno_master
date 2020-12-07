@@ -62,7 +62,7 @@ class ViewController: UIViewController {
                         
                         //#00A2C7 UIColor(red:0.00, green:0.64, blue:0.78, alpha:1.0)
                         self.lbError.isHidden = false
-                        self.lbError.text = "Correo enviado correctamente"
+                        self.lbError.text = "E-mail enviado correctamente"
                         self.lbError.textColor = UIColor(red:0.00, green:0.64, blue:0.78, alpha:1.0)
                         self.viewUser.backgroundColor = UIColor(red:0.60, green:0.60, blue:0.60, alpha:0.3)
                         self.txtUser.text = ""
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
                         
                     }else {
                         self.lbError.isHidden = false
-                        self.lbError.text = "Error recuperar contraseña \(String(describing: error))"
+                        self.lbError.text = "Error al recuperar contraseña \(String(describing: error))"
                         self.viewUser.backgroundColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
                         self.lbError.textColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
                     }
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
                 
             }else{
                 lbError.isHidden = false
-                lbError.text = "Ingrese correo válido"
+                lbError.text = "Ingrese E-mail válido"
                 viewUser.backgroundColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
                 self.lbError.textColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
             }
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
                         if(user != nil){
                             self.lbError.isHidden = true
                             self.lbError.isHidden = false
-                            self.lbError.text = "Ingreso correcto"
+                            self.lbError.text = "Ingresando..."
                             self.lbError.textColor = UIColor(red:0.00, green:0.64, blue:0.78, alpha:1.0)
                             self.viewUser.backgroundColor = UIColor(red:0.60, green:0.60, blue:0.60, alpha:0.3)
                             self.txtUser.text = ""
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
                         }else{
                             if(error?.localizedDescription == "Invalid username/password."){
                                 self.lbError.isHidden = false
-                                self.lbError.text = "Correo o Contraseña incorrectos"
+                                self.lbError.text = "E-mail o Contraseña incorrectos"
                                 self.lbError.textColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
                                 
                             }else{
@@ -130,7 +130,7 @@ class ViewController: UIViewController {
                 }
             }else{
                 lbError.isHidden = false
-                lbError.text = "Ingrese e-mail y contraseña"
+                lbError.text = "Ingrese E-mail y Contraseña"
                 self.lbError.textColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
                 self.viewUser.backgroundColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
                 self.viewPassword.backgroundColor = UIColor(red:1, green:0.2, blue:0.4, alpha:1)
